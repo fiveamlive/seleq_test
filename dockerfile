@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
-RUN git clone https://github.com/fiveamlive/seleq_test.git
+FROM ubuntu
 WORKDIR /seleq_test
-ENTRYPOINT ["./main"]
+COPY . .
+RUN main
