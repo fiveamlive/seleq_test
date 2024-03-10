@@ -1,4 +1,5 @@
 FROM ubuntu
 WORKDIR /seleq_test
 COPY . .
-RUN main
+
+CMD ["/seleq_test/main"]
