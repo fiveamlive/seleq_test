@@ -1,3 +1,3 @@
 FROM ubuntu:22.04
-COPY main
-RUN main
+COPY main /main
+ENTRYPOINT ["/main"]
